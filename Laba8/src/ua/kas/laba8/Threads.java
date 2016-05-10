@@ -28,7 +28,7 @@ public class Threads implements Runnable{
 				output3 = new ObjectOutputStream(connection.getOutputStream());
 				output4 = new ObjectOutputStream(connection.getOutputStream());
 				input = new ObjectInputStream(connection.getInputStream());
-				System.out.println((String) input.readObject());
+				//System.out.println((String) input.readObject());
 				JOptionPane.showMessageDialog(null, (String) input.readObject());
 			}
 		} catch (IOException e) {e.printStackTrace();
